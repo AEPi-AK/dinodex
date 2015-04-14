@@ -1,0 +1,29 @@
+Router.map(function(){
+	this.route('keypad', {
+		path: '/'
+	});
+	this.route('test')
+});
+if (Meteor.isClient) {
+  // counter starts at 0
+  Session.setDefault('counter', 0);
+
+  Template.keypad.helpers({
+    counter: function () {
+      return Session.get('counter');
+    }
+  });
+
+  Template.keypad.events({
+    'click button': function (e) {
+      // increment the counter when button is clicked
+      Router.go('test');
+    }
+  });
+}
+
+if (Meteor.isServer) {
+  Meteor.startup(function () {
+    // code to run on server at startup
+  });
+}

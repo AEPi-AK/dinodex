@@ -1,0 +1,49 @@
+html {
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+.page-wrap {
+    display: table;
+    margin: 50px auto;
+    background: white;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.keypad {
+    float: center;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+.keypad > button {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    line-height: 75px;
+    border-radius: 50px;
+    border: 1px #5A58FF solid;
+    background-color: white;
+    font-size: 48px;
+    color: #343434;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+.keypad > button:active {
+    color: white;
+    background: #5A58FF;
+    transition: 0s;
+    -webkit-transition: 0s;
+}
+.main {
+  text-align: center;
+}
